@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-c4-v%vqkx&_qc+%and65*z+$xlsbtpuol%wav^z3d6)&s(2szm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com','127.0.0.1',]
+ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1',]
 
 
 # Application definition
@@ -89,6 +89,10 @@ DATABASES = {
     "default": dj_database_url.parse("postgresql://neondb_owner:npg_t1pehBVv6SWa@ep-snowy-lake-a2acynrw.eu-central-1.aws.neon.tech/sulk_emu_uncut_906113")
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
