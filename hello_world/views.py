@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 # Create your views here.
-def index():
+def index(request):
     return HttpResponse("Hello, World")
 
 
@@ -11,5 +11,5 @@ def about(request):
     return render(request, "hello_world/about.html")
 
 
-def contact():
+def contact(request):
     return HttpResponse("This is a contact page!")
