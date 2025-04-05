@@ -132,6 +132,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',  # für zentrales CSS & JS
 ]
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # wichtig für collectstatic
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
